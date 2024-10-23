@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laboratorio de HTML y CSS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #FFFF99;
+        }
+        header {
+            background-color: #f8f8f8;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 2px solid #ddd;
+        }
+        section {
+            margin: 20px;
+        }
+        table {
+            border-collapse: collapse;
+            width: 80%;
+            margin: 20px auto;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+        ul, ol {
+            margin: 20px 40px;
+        }
+        .destacados {
+            font-weight: bold;
+            color: #007BFF;
+        }
+        h1, h2, h3 {
+            color: #000;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Laboratorio de HTML y CSS</h1>
+    </header>
+
+    <section id="actividad-1">
+        <h2>Actividad 1: Listas</h2>
+        <h3>Lista Desordenada</h3>
+        <ul>
+            <li>León</li>
+            <li>Tigre</li>
+            <li>Elefante</li>
+            <li>Jirafa</li>
+            <li>Cebra</li>
+        </ul>
+
+        <h3>Lista Ordenada</h3>
+        <ol>
+            <li>Toyota</li>
+            <li>Ford</li>
+            <li>Chevrolet</li>
+            <li>Honda</li>
+            <li>BMW</li>
+        </ol>
+
+        <h3>Lista Anidada</h3>
+        <ul>
+            <li>Departamentos de Colombia
+                <ul>
+                    <li>Antioquia</li>
+                    <li>Cundinamarca</li>
+                    <li>Valle del Cauca</li>
+                    <li>Bolívar</li>
+                    <li>Atlántico</li>
+                </ul>
+            </li>
+            <li>Ciudades de Colombia
+                <ul>
+                    <li>Bogotá</li>
+                    <li>Medellín</li>
+                    <li>Cali</li>
+                    <li>Cartagena</li>
+                    <li>Barranquilla</li>
+                </ul>
+            </li>
+        </ul>
+    </section>
+
+    <section id="actividad-2">
+        <h2>Actividad 2: Tabla Simple</h2>
+        <table border="1" cellspacing="0" cellpadding="5">
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Email</th>
+                    <th>Dirección</th>
+                    <th>Teléfono</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Juan Pérez</td>
+                    <td>juan.perez@example.com</td>
+                    <td>Calle 123, Bogotá</td>
+                    <td>300-123-4567</td>
+                </tr>
+                <tr>
+                    <td>María Gómez</td>
+                    <td>maria.gomez@example.com</td>
+                    <td>Carrera 45, Medellín</td>
+                    <td>310-765-4321</td>
+                </tr>
+                <tr>
+                    <td>Carlos López</td>
+                    <td>carlos.lopez@example.com</td>
+                    <td>Avenida 10, Cali</td>
+                    <td>320-987-6543</td>
+                </tr>
+                <tr>
+                    <td>Ana Rodríguez</td>
+                    <td>ana.rodriguez@example.com</td>
+                    <td>Calle 56, Cartagena</td>
+                    <td>300-654-3210</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section id="actividad-3">
+        <h2>Actividad 3: Página Web Completa</h2>
+        <div>
+            <h3>Lista de Compras</h3>
+            <ul>
+                <li class="destacados">Frutas
+                    <ul>
+                        <li>Manzanas</li>
+                        <li>Plátanos</li>
+                        <li>Uvas</li>
+                        <li>Naranjas</li>
+                        <li>Fresas</li>
+                    </ul>
+                </li>
+                <li class="destacados">Vegetales
+                    <ul>
+                        <li>Zanahorias</li>
+                        <li>Tomates</li>
+                        <li>Lechuga</li>
+                        <li>Pimientos</li>
+                        <li>Espinacas</li>
+                    </ul>
+                </li>
+                <li class="destacados">Lácteos
+                    <ul>
+                        <li>Leche</li>
+                        <li>Yogur</li>
+                        <li>Queso</li>
+                        <li>Mantequilla</li>
+                        <li>Crema</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <h3>Tabla de Productos</h3>
+            <table border="1" cellspacing="0" cellpadding="5">
+                <thead>
+                    <tr>
+                        <th>Producto</th>
+                        <th>Cantidad</th>
+                        <th>Precio</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Manzanas</td>
+                        <td>10</td>
+                        <td>$5.00</td>
+                    </tr>
+                    <tr>
+                        <td>Plátanos</td>
+                        <td>6</td>
+                        <td>$3.00</td>
+                    </tr>
+                    <tr>
+                        <td>Zanahorias</td>
+                        <td>8</td>
+                        <td>$4.00</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+</body>
+</html>
