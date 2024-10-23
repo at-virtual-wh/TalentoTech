@@ -1,0 +1,77 @@
+### Laboratorio de Git y GitHub - Ejercicio de Práctica
+
+##### **Paso 1: Configuración de Git**
+
+1. Abrir la terminal y configurar el nombre de usuario y correo electrónico:
+
+   git config --global user.name "Nombre"
+   git config --global user.email tuemail@example.com
+   git config --global core.editor "code --wait"
+   git config --global core.autocrlf true
+   git config --global init.defaultBranch main
+   
+2. Verificar la configuración:
+  
+   git config --list
+   git config --global -e
+  
+##### **Paso 2: Creación de un Repositorio Local**
+
+1. Crear una nueva carpeta para el proyecto y navegar hacia ella:
+   
+   mkdir TalentoTech
+   cd TalentoTech
+   
+2. Inicializar un nuevo repositorio Git:
+   
+   git init
+   
+3. Crear un archivo `Archivo-1.txt` con una breve descripción:
+   
+   echo "Este es el archivo uno." > Archivo-1.txt
+   
+4. Añadir el archivo al área de preparación:
+   
+   git add Archivo-1.txt
+   
+
+##### **Paso 3: Realizar un Commit**
+
+1. Crear un commit inicial con un mensaje descriptivo:
+   
+   git commit -m "Commit inicial: Añadir Archivo-1.txt"
+   
+
+##### **Paso 4: Crear y Fusionar Ramas**
+
+1. Crear una nueva rama llamada `experimento`:
+   
+   git branch experimento
+   
+2. Cambiar a la rama `experimento`:
+   
+   git checkout experimento
+   
+3. Hacer cambios en el archivo `Archivo-1.txt` y realizar un commit:
+   
+   echo "Este es un cambio en la rama experimento." >> Archivo-1.txt
+   git add Archivo-1.txt
+   git commit -m "Modificar Archivo-1.txt en la rama experimento"
+   
+4. Fusionar la rama `experimento` con la rama principal (`main`):
+   
+   git checkout main
+   git merge experimento
+   
+
+##### **Paso 5: Sincronizar con un Repositorio Remoto (Opcional)**
+
+1. Crear un repositorio en GitHub y enlazarlo con el repositorio local:
+   
+   git remote add origin https://github.com/usuario/mi-primer-repositorio.git
+   
+2. Subir los cambios al repositorio remoto:
+   
+   git push -u origin main
+   
+
